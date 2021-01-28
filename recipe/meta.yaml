@@ -1,4 +1,4 @@
-{% set version = '0.6.0' %}
+{% set version = "0.7.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/paradox_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/paradox/paradox_{{ version }}.tar.gz
-  sha256: 23720fce42306240766e2d5b28c7de1491ff041ffa3d4fdc7c91331e02c160ff
+  sha256: 72220e5fa0649748b75e0b71c736d7151d41633ba23e5e1726d5c5bd79d3e6bb
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -47,12 +47,10 @@ test:
 about:
   home: https://paradox.mlr-org.com, https://github.com/mlr-org/paradox
   license: LGPL-3.0-only
-  summary: Define parameter spaces, constraints and dependencies for arbitrary algorithms, to
-    program on such spaces. Also includes statistical designs and random samplers. Objects
-    are implemented as 'R6' classes.
+  summary: Define parameter spaces, constraints and dependencies for arbitrary algorithms, to program on such spaces. Also includes statistical designs and random samplers. Objects are implemented as 'R6' classes.
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
 
 extra:
   recipe-maintainers:
