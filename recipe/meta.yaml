@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/paradox_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/paradox/paradox_{{ version }}.tar.gz
-  sha256: 72220e5fa0649748b75e0b71c736d7151d41633ba23e5e1726d5c5bd79d3e6bb
+  sha256: fae54a59f4c202718be9d256c2850af30462e28050591deaaaac3bfd17b82eb6
 
 build:
   merge_build_host: true  # [win]
