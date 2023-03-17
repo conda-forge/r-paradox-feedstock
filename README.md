@@ -1,11 +1,11 @@
-About r-paradox
-===============
+About r-paradox-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-paradox-feedstock/blob/main/LICENSE.txt)
 
 Home: https://paradox.mlr-org.com, https://github.com/mlr-org/paradox
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-paradox-feedstock/blob/main/LICENSE.txt)
 
 Summary: Define parameter spaces, constraints and dependencies for arbitrary algorithms, to program on such spaces. Also includes statistical designs and random samplers. Objects are implemented as 'R6' classes.
 
